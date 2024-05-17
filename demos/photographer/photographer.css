@@ -25,7 +25,31 @@ body.dark {
 	font-weight: 700;
 	letter-spacing: 0;
 }
-
+.subtitlediscover h2{
+	font-size: 38px;
+}
+@media (max-width: 900px){
+	.slider-element h2{
+		font-size: 30px;
+		text-align: center;
+	}
+	.slider-element small{
+		text-align: center;
+	}
+	.slider-element h5{
+		text-align: center;
+	}
+	.slider-element a{
+		width: 100%;
+	}
+	#header-wrap a{
+		text-align: center;
+	}
+	.subtitlediscover{
+		font-size: 30px;
+		text-align: center;
+	}
+}
 .button.button-change.button-color {
 	background-color: #FFF !important;
 	text-shadow: none;
