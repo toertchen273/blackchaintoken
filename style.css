@@ -13954,6 +13954,14 @@ h6,
     line-height: 1.2;
     margin-top: 15px;
   }
+  #socialmedia small,
+  #contactmeindex small{
+    text-align: center;
+  }
+  #socialmedia p,
+  #contactmeindex p{
+    text-align: center;
+  }
 }
 h1 > span:not(.nocolor):not(.badge), .h1 > span:not(.nocolor):not(.badge),
 h2 > span:not(.nocolor):not(.badge),
