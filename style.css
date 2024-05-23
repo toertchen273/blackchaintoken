@@ -2126,6 +2126,9 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+  #logo a {
+    text-align: center;
+  }
 }
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
@@ -13855,7 +13858,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: var(--cnvs-font-size-h2);
+  font-size: 38px;
 }
 
 h3, .h3 {
@@ -13891,19 +13894,73 @@ h6,
 .h6 {
   font-weight: bold;
 }
+.contactusroadmap{
+  font-size: 64px;
+  line-height: 1.2
+}
 
 @media (max-width: 767.98px) {
   h1, .h1 {
     font-size: 1.75rem;
   }
   h2, .h2 {
-    font-size: 1.5rem;
+    font-size: 30px;
+    text-align: center;
   }
   h3, .h3 {
     font-size: 1.25rem;
   }
   h4, .h4 {
     font-size: 1rem;
+  }
+  .discovertextsmall,
+  .explanationtextdiscovery{
+    text-align: center;
+  }
+  .counter-large{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .countingdivs h5{
+    text-align: center;
+  }
+  .countingdivs p{
+    text-align: center;
+  }
+  .heading-block {
+    width: 85%;
+  }
+  .flip-card-back a{
+    width: 100%;
+  }
+  #logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerroadmap small{
+    text-align: center;
+  }
+  .containerroadmap p{
+    text-align: center;
+  }
+  .card-body h4{
+    text-align: center;
+  }
+  .contactusroadmap{
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 15px;
+  }
+  #socialmedia small,
+  #contactmeindex small{
+    text-align: center;
+  }
+  #socialmedia p,
+  #contactmeindex p{
+    text-align: center;
   }
 }
 h1 > span:not(.nocolor):not(.badge), .h1 > span:not(.nocolor):not(.badge),

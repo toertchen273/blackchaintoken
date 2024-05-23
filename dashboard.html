@@ -25,13 +25,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Photographer Specific Stylesheet -->
-	<link rel="stylesheet" href="demos/photographer/photographer.css" type="text/css" />
+	<link rel="stylesheet" href="demos/photographer/photographer.css" type="text/css"/>
+  <link rel="stylesheet" href="dashboardstyle.css">
 	<!-- Photographer Specific Fonts -->
 	<link rel="stylesheet" href="demos/photographer/css/fonts.css" type="text/css" />
 	<!-- / -->
 
 	<!-- Photographer Specific Color -->
 	<link rel="stylesheet" href="css/colors.php?color=e41c34" type="text/css" />
+
+  <!-- JS Scripts for Walletintegration -->
+  <script src="https://unpkg.com/@solana/web3.js@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/@solana/wallet-adapter-wallets@latest/dist/wallet-adapter-wallets.umd.js"></script>
+  <script src="https://unpkg.com/@solana/wallet-adapter-base@latest/dist/wallet-adapter-base.umd.js"></script>
+
 
 	<!-- Document Title
 	============================================= -->
@@ -65,8 +72,10 @@
 						<div class="header-misc">
 
 
-							<a href="wallet.html#boerse" class="button button-rounded ms-3 d-none d-sm-block">IBIT Token kaufen</a>
-
+              <div class="wallet-info">
+                <button id="connect-wallet" class="stake-button button button-rounded ms-3">Wallet verbinden</button>
+    <p id="wallet-address"></p>
+              </div>
 						</div>
 
 
@@ -171,41 +180,126 @@
 		<!-- Slider
 		============================================= -->
 		<section id="slider" class="slider-element full-screen clearfix" style="background: url('demos/photographer/images/dots-1.png') 100% 0 no-repeat; background-size: 60% auto">
+      <div class="main-content">
+        <div class="stats">
+            <div class="stat-item">
+                <p>Total staked</p>
+                <h3>5500 IBIT</h3>
+            </div>
+            <div class="stat-item">
+                <p>Available</p>
+                <h3>0 IBIT</h3>
+            </div>
+            <div class="stat-item">
+                <p>Total rewards</p>
+                <h3>0 IBIT</h3>
+            </div>
+            <div class="stat-item">
+                <p>24h Rewards</p>
+                <h3>0 IBIT</h3>
+            </div>
+        </div>
+        <div class="action-buttons">
+            <button class="stake-button" id="stake">Stake</button>
+            <button class="stake-button" id="unstake">Unstake</button>
+            <button class="stake-button" id="claimrewards">Rewards auszahlen</button>
+        </div>
+        <div class="wallet-info">
+            <div class="chart-container">
+              <div class="statistics-container">
+                <div class="statitem">
+                    <h3>Momentane monatliche Returns</h3>
+                    <p id="current-monthly-return">11.96% | 657.8 IBIT</p>
+                </div>
+                <div class="statitem">
+                    <h3>voraussichtliche tägliche Returns</h3>
+                    <p id="expected-daily-return">0.398% | 21.9 IBIT</p>
+                </div>
+                <div class="statitem">
+                    <h3>voraussichtliche wöchentliche Returns</h3>
+                    <p id="expected-weekly-return">2.79% | 153.5 IBIT</p>
+                </div>
+                <div class="statitem">
+                    <h3>voraussichtliche jährliche Returns</h3>
+                    <p id="expected-monthly-return">145.11% | 7981.0 IBIT</p>
+                </div>
+                <div class="statitem">
+                    <h3>verfügbare Token in deiner Wallet</h3>
+                    <p id="expected-monthly-return">12000 IBIT</p>
+                </div>
+                <div class="statitem">
+                    <h3>automatisiertes Restake</h3>
+                    <p id="expected-monthly-return">not activated</p>
+                </div>
+              </div>
+            </div>
+            <div class="transaction-history">
+                <h3>Transaktionshistorie</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Datum</th>
+                            <th>Typ</th>
+                            <th>Betrag</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-05-20</td>
+                            <td>Staking</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>2024-05-20</td>
+                            <td>Staking</td>
+                            <td>2500</td>
+                        </tr>
+                        <tr>
+                            <td>2024-05-20</td>
+                            <td>Staking</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>2024-05-20</td>
+                            <td>Staking</td>
+                            <td>2000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+      <script src="dashboardscript.js"></script>
 
-			<div class="content-wrap" id="roadmaprmpage">
-				<div class="container">
-					<div class="heading-block text-center mt-5 mx-auto border-bottom-0" style="max-width: 750px">
-						<small class="text-muted text-uppercase fw-light ls-3"> <span style="color:#000;">BlackRock Token Airdrops</span> </small>
-						<h2 style="color:#000;">Die IBIT Aidrops</h2>
-						<p style="color:#000;">Erfahre alles über die IBIT Airdrops.</p>
-					</div>
-
-					<div class="clear"></div>
-
-
-				</div>
-			</div>
 
 		</section><!-- #Slider End -->
 
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="noborder clearfix">
-
+		<footer id="footer" class="no-border clearfix">
 			<!-- Copyrights
 			============================================= -->
-			<div id="copyrights" style="background: #F5F5F5">
+			<div id="copyrights" style="background: #111">
+				<div class="container">
 
-				<div class="container clearfix">
-
-					<div class="col_full center nobottommargin topmargin-sm">
-						2024. All Rights Reserved.<br><br>
+					<div class="w-100 text-center mt-4">
+						<p class="mb-3" style="color:#FFF"> 2024. All Rights Reserved.</p>
+						<a href="https://twitter.com/TokenBlack80107" target="_blank" class="social-icon inline-block si-small border-0 text-white-50 rounded-circle h-bg-x-twitter">
+							<i class="fa-brands fa-x-twitter"></i>
+							<i class="fa-brands fa-x-twitter"></i>
+						</a>
+						<a href="https://www.instagram.com/blackrocktoken" target="_blank" class="social-icon inline-block si-small border-0 text-white-50 rounded-circle h-bg-instagram">
+							<i class="bi-instagram"></i>
+							<i class="bi-instagram"></i>
+						</a>
+						<a href="mailto:info@blackrock-token.io" class="social-icon inline-block si-small border-0 text-white-50 rounded-circle h-bg-google">
+							<i class="bi-envelope"></i>
+							<i class="bi-envelope"></i>
+						</a>
 					</div>
 
 				</div>
-
 			</div><!-- #copyrights end -->
-
 		</footer><!-- #footer end -->
 
 	</div><!-- #wrapper end -->
@@ -213,6 +307,9 @@
 	<!-- Go To Top
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up bgcolor"></div>
+
+  <!-- Walletscript
+  ========================================== -->
 
 	<!-- External JavaScripts
 	============================================= -->
