@@ -3847,6 +3847,16 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+#stake_input, #unstake_input {
+  border: 2px solid rgb(231, 224, 224);
+  border-radius: 6px;
+  box-sizing: border-box;
+  text-align: right;
+  padding: 1px;
+  margin-top: 5px;
+}
+
+
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
@@ -17628,6 +17638,11 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
   margin-left: auto;
   margin-right: auto;
   transition: height 0.4s ease, padding 0.4s ease, margin 0.4s ease, opacity 0.3s ease;
+}
+@media (max-width: 991px) {
+  #logo a {
+    font-size: 28px !important;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   #logo img {
