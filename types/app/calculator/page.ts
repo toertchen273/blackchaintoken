@@ -1,4 +1,4 @@
-// File: /Users/dennis/Desktop/bct-main/app/calculator/page.js
+// File: C:\Users\fahad.ali\Desktop\bct main\app\calculator\page.js
 import * as entry from '../../../../app/calculator/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

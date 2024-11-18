@@ -1,51 +1,51 @@
 {
-  "app/components/Header.js -> @solana/wallet-adapter-react-ui": {
+  "app\\components\\Header.js -> @solana/wallet-adapter-react-ui": {
     "id": 5634,
     "files": [
       "static/chunks/634.cb3e330bdf6b71f0.js"
     ]
   },
-  "node_modules/@particle-network/auth/es/index.js -> draggabilly": {
+  "node_modules\\@particle-network\\auth\\es\\index.js -> draggabilly": {
     "id": null,
     "files": []
   },
-  "node_modules/@solana/wallet-adapter-fractal/lib/esm/adapter.js -> @fractalwagmi/solana-wallet-adapter": {
+  "node_modules\\@solana\\wallet-adapter-fractal\\lib\\esm\\adapter.js -> @fractalwagmi/solana-wallet-adapter": {
     "id": null,
     "files": []
   },
-  "node_modules/@solana/wallet-adapter-keystone/lib/esm/adapter.js -> @keystonehq/sol-keyring": {
+  "node_modules\\@solana\\wallet-adapter-keystone\\lib\\esm\\adapter.js -> @keystonehq/sol-keyring": {
     "id": null,
     "files": []
   },
-  "node_modules/@solana/wallet-adapter-ledger/lib/esm/adapter.js -> @ledgerhq/hw-transport-webhid": {
+  "node_modules\\@solana\\wallet-adapter-ledger\\lib\\esm\\adapter.js -> @ledgerhq/hw-transport-webhid": {
     "id": null,
     "files": []
   },
-  "node_modules/@solana/wallet-adapter-particle/lib/esm/adapter.js -> @particle-network/solana-wallet": {
+  "node_modules\\@solana\\wallet-adapter-particle\\lib\\esm\\adapter.js -> @particle-network/solana-wallet": {
     "id": null,
     "files": []
   },
-  "node_modules/@solana/wallet-adapter-salmon/lib/esm/adapter.js -> salmon-adapter-sdk": {
+  "node_modules\\@solana\\wallet-adapter-salmon\\lib\\esm\\adapter.js -> salmon-adapter-sdk": {
     "id": null,
     "files": []
   },
-  "node_modules/@solana/wallet-adapter-solflare/lib/esm/adapter.js -> @solflare-wallet/sdk": {
+  "node_modules\\@solana\\wallet-adapter-solflare\\lib\\esm\\adapter.js -> @solflare-wallet/sdk": {
     "id": null,
     "files": []
   },
-  "node_modules/@solana/wallet-adapter-solflare/lib/esm/metamask/wallet.js -> @solflare-wallet/metamask-sdk": {
+  "node_modules\\@solana\\wallet-adapter-solflare\\lib\\esm\\metamask\\wallet.js -> @solflare-wallet/metamask-sdk": {
     "id": null,
     "files": []
   },
-  "node_modules/@solana/wallet-adapter-torus/lib/esm/adapter.js -> @toruslabs/solana-embed": {
+  "node_modules\\@solana\\wallet-adapter-torus\\lib\\esm\\adapter.js -> @toruslabs/solana-embed": {
     "id": null,
     "files": []
   },
-  "node_modules/@solana/wallet-adapter-trezor/lib/esm/adapter.js -> @trezor/connect-web": {
+  "node_modules\\@solana\\wallet-adapter-trezor\\lib\\esm\\adapter.js -> @trezor/connect-web": {
     "id": null,
     "files": []
   },
-  "node_modules/@solana/wallet-adapter-walletconnect/lib/esm/adapter.js -> @jnwng/walletconnect-solana": {
+  "node_modules\\@solana\\wallet-adapter-walletconnect\\lib\\esm\\adapter.js -> @jnwng/walletconnect-solana": {
     "id": null,
     "files": []
   }
